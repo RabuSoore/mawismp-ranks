@@ -1,77 +1,80 @@
 /* style.css */
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #c42929;
+  text-align: center;
+  padding: 50px 20px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+  font-size: 2.5em;
+  color: #c42929;
 }
 
 header p {
-    margin-top: 10px;
-    font-size: 1.2em;
+  color: #bbbbbb;
+  margin-top: 10px;
 }
 
 .rank-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 .rank-card {
-    background-color: #1e1e1e;
-    border: 1px solid #c42929;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  width: 280px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
 }
 
 .rank-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-8px);
+  border-color: #c42929;
 }
 
 .rank-card h2 {
-    margin-bottom: 15px;
-    color: #ff4c4c;
+  color: #c42929;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .rank-card p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    line-height: 1.6;
+  margin-bottom: 20px;
+  color: #dddddd;
 }
 
-.buy-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #c42929;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.rank-card a {
+  background-color: #c42929;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.buy-button:hover {
-    background-color: #a52020;
+.rank-card a:hover {
+  background-color: #a02121;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1a1a1a;
-    font-size: 0.9em;
-    color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  background-color: #1e1e1e;
+  margin-top: 30px;
 }
